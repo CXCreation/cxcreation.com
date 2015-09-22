@@ -1,0 +1,118 @@
+.header {
+  height: 220px;
+  position: relative;
+  // background: #f1f1f1;
+}
+
+.header-site-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-site-owner {
+  position: absolute;
+  top: 8px;
+  color: $cxcolor-darkblue;
+  font-size: 20px;
+}
+
+.header-page-nav {
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+
+.header-site-title {
+  width: 100%;
+  position: absolute;
+  top: 44px;
+  color: $cxcolor-darkgray;
+  font-size: 40px;
+  text-align: center;
+}
+
+.header-site-description {
+  width: 100%;
+  position: absolute;
+  top: 84px;
+  color: $cxcolor-gray;
+  font-size: 30px;
+  text-align:center;
+  font-family: 'Norican', cursive;
+}
+
+.header-social-nav {
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  top: 150px;
+
+  $social-button-color-normal: $cxcolor-darkblue;
+  $social-button-color-hover: $cxcolor-lightblue;
+
+  .social-button {
+    float: left;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    font-size: 14px;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 40px;
+    color: $social-button-color-normal;
+    -o-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -khtml-transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+    &,
+    &:link {
+      text-decoration: none;
+    }
+
+    &:visited {
+      text-decoration: none;
+      color: $social-button-color-normal;
+    }
+
+    &:hover {
+      color: $social-button-color-hover;
+    }
+
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  .github {
+    @extend .social-button;
+  }
+
+  .twitter {
+    @extend .social-button;
+  }
+
+  .linkedin {
+    @extend .social-button;
+  }
+
+  .codementor {
+    @extend .social-button;
+  }
+}
+
+.page-link {
+  position: relative;
+  color: $cxcolor-darkblue;
+  font-size: 20px;
+  padding-left: 16px;
+  -o-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -khtml-transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}

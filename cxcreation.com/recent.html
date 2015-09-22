@@ -1,0 +1,16 @@
+---
+title: CXCreation - Murmur
+layout: default
+---
+
+<section id="recent">
+  {% for post in site.posts | limit: 10 %}
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title"><a href="{{ post.url }}">{{ post.title | camel_break }}</a></h1>
+      <p {{ post.excerpt | markdownify }}</p>
+      <a href="{{ post.url }}" class="post-continue">Continue Reading...</a>
+    </header>
+  </article>
+  {% endfor %}
+</section>

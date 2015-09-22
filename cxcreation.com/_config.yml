@@ -1,0 +1,47 @@
+# Site settings
+
+lang: en-US
+# source: ./cxcreation.com
+url: "http://cxcreation.com"
+
+title: CXCreation
+email: chrisxu@cxcreation.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: /:title/
+baseurl: ""
+
+# social media
+social:
+  github_username: chrisxu1221
+  github_id: 3436374
+  twitter_username: chrisxu1221
+  twitter_id: 426476596
+  linkedin_id: 143284727
+  codemetor_usernaem: chrisxu
+  codemetor_id: 13159
+
+# page nav
+paginate: 5
+paginate_path: "/recent/page:num/"
+
+navigation:
+ - title: Recent
+   url: /recent.html
+ - title: Apps
+   url: /apps.html
+ - title: About
+   url: /about.html
+
+# collections
+collections:
+  portfolio:
+    output: true
+    permalink: /apps/:path/
+
+# Build settings
+markdown: redcarpet
+
+google_analytics: "UA-63591366-1"

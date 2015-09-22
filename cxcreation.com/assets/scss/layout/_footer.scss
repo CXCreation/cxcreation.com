@@ -1,0 +1,30 @@
+.footer {
+  height: 88px;
+  position: relative;
+  text-align:center;
+}
+
+.footer-twitter-follow-button {
+  width: 168px;
+  margin: 44px auto 8px auto;
+}
+
+.footer-copyright {
+
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  a:hover {
+    color: $cxcolor-blue;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
+}

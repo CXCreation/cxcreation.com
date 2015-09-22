@@ -1,0 +1,26 @@
+<header class="header">
+  <nav class="header-site-nav">
+    <!-- <div class="header-site-owner"><a href="/">CXCreation</a></div> -->
+    <a class="header-site-owner" href="/">CXCreation</a>
+    <div class="header-page-nav">
+      {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url %}{% assign current = 'current' %}{% endif %}
+        <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+
+  <div class="header-site-title">Chris Xu</div>
+  <!-- <h1 class="header-site-title" href="{{ site.baseurl }}/">Chris Xu</h1> -->
+
+  <div class="header-site-description">Write the code. Change the World.</div>
+
+  <nav class="nav">
+    <div class="header-social-nav">
+      <hr>
+      <a class="github" href="https://github.com/{{ site.social.github_username }}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+      <a class="twitter" href="https://twitter.com/{{ site.social.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+      <a class="linkedin" href="http://www.linkedin.com/profile/view?id={{ site.social.linkedin_id }}" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+      <a class="codementor" href="https://www.codementor.io/{{ site.social.codemetor_usernaem }}" target="_blank"><i class="fa fa-code fa-2x"></i></a>
+    </div>
+  </nav>
+</header>

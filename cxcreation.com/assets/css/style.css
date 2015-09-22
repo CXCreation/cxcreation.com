@@ -1,0 +1,311 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Norican);
+/* line 1, ../scss/base/_config.scss */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  background: white;
+}
+
+/* line 9, ../scss/base/_fonts.scss */
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 1, ../scss/base/_base.scss */
+body {
+  background: #ffffff;
+}
+
+/* line 5, ../scss/base/_base.scss */
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 28.4px;
+}
+
+/* line 14, ../scss/base/_base.scss */
+h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+
+/* line 23, ../scss/base/_base.scss */
+p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 24.4px;
+}
+
+/* line 32, ../scss/base/_base.scss */
+blockquote {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* line 41, ../scss/base/_base.scss */
+pre {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+/* line 50, ../scss/base/_base.scss */
+a {
+  text-decoration: none;
+}
+/* line 53, ../scss/base/_base.scss */
+a, a:link {
+  color: #0084b4;
+  text-decoration: none;
+}
+/* line 59, ../scss/base/_base.scss */
+a:visited {
+  color: #0084b4;
+  text-decoration: none;
+}
+/* line 64, ../scss/base/_base.scss */
+a:hover {
+  color: #1dcaff;
+}
+/* line 68, ../scss/base/_base.scss */
+a:active {
+  text-decoration: underline;
+}
+
+/* line 73, ../scss/base/_base.scss */
+hr {
+  height: 1px;
+  border: 0;
+  display: block;
+  border-top: 1px solid #0084b4;
+  padding: 0;
+}
+
+/* line 81, ../scss/base/_base.scss */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* line 1, ../scss/layout/_header.scss */
+.header {
+  height: 220px;
+  position: relative;
+}
+
+/* line 7, ../scss/layout/_header.scss */
+.header-site-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 12, ../scss/layout/_header.scss */
+.header-site-owner {
+  position: absolute;
+  top: 8px;
+  color: #0084b4;
+  font-size: 20px;
+}
+
+/* line 19, ../scss/layout/_header.scss */
+.header-page-nav {
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+
+/* line 26, ../scss/layout/_header.scss */
+.header-site-title {
+  width: 100%;
+  position: absolute;
+  top: 44px;
+  color: #5d5d5d;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* line 35, ../scss/layout/_header.scss */
+.header-site-description {
+  width: 100%;
+  position: absolute;
+  top: 84px;
+  color: #cccccc;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Norican', cursive;
+}
+
+/* line 45, ../scss/layout/_header.scss */
+.header-social-nav {
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  top: 150px;
+}
+/* line 54, ../scss/layout/_header.scss */
+.header-social-nav .social-button, .header-social-nav .github, .header-social-nav .twitter, .header-social-nav .linkedin, .header-social-nav .codementor {
+  float: left;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  color: #0084b4;
+  -o-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -khtml-transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+/* line 71, ../scss/layout/_header.scss */
+.header-social-nav .social-button, .header-social-nav .github, .header-social-nav .twitter, .header-social-nav .linkedin, .header-social-nav .codementor, .header-social-nav .social-button:link, .header-social-nav .github:link, .header-social-nav .twitter:link, .header-social-nav .linkedin:link, .header-social-nav .codementor:link {
+  text-decoration: none;
+}
+/* line 76, ../scss/layout/_header.scss */
+.header-social-nav .social-button:visited, .header-social-nav .github:visited, .header-social-nav .twitter:visited, .header-social-nav .linkedin:visited, .header-social-nav .codementor:visited {
+  text-decoration: none;
+  color: #0084b4;
+}
+/* line 81, ../scss/layout/_header.scss */
+.header-social-nav .social-button:hover, .header-social-nav .github:hover, .header-social-nav .twitter:hover, .header-social-nav .linkedin:hover, .header-social-nav .codementor:hover {
+  color: #1dcaff;
+}
+/* line 85, ../scss/layout/_header.scss */
+.header-social-nav .social-button:active, .header-social-nav .github:active, .header-social-nav .twitter:active, .header-social-nav .linkedin:active, .header-social-nav .codementor:active {
+  text-decoration: underline;
+}
+
+/* line 107, ../scss/layout/_header.scss */
+.page-link {
+  position: relative;
+  color: #0084b4;
+  font-size: 20px;
+  padding-left: 16px;
+  -o-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -khtml-transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+/* line 1, ../scss/layout/_footer.scss */
+.footer {
+  height: 88px;
+  position: relative;
+  text-align: center;
+}
+
+/* line 7, ../scss/layout/_footer.scss */
+.footer-twitter-follow-button {
+  width: 168px;
+  margin: 44px auto 8px auto;
+}
+
+/* line 14, ../scss/layout/_footer.scss */
+.footer-copyright a:link {
+  text-decoration: none;
+  color: black;
+}
+/* line 19, ../scss/layout/_footer.scss */
+.footer-copyright a:visited {
+  color: black;
+}
+/* line 23, ../scss/layout/_footer.scss */
+.footer-copyright a:hover {
+  color: #00aced;
+}
+/* line 27, ../scss/layout/_footer.scss */
+.footer-copyright a:active {
+  text-decoration: underline;
+}
+
+/* line 1, ../scss/pages/_home.scss */
+.section-title {
+  position: relative;
+  font-size: 20px;
+  color: #cccccc;
+  text-align: center;
+  display: block;
+  margin: 0px auto 8px auto;
+}
+
+/* line 15, ../scss/pages/_home.scss */
+.post-header {
+  padding-bottom: 20px;
+}
+
+/* line 19, ../scss/pages/_home.scss */
+.post-title {
+  color: #0084b4;
+  margin: auto auto -12px auto;
+}
+
+/* line 24, ../scss/pages/_home.scss */
+.post-continue {
+  position: relative;
+  top: -12px;
+}
+/* line 27, ../scss/pages/_home.scss */
+.post-continue, .post-continue:link {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+/* line 33, ../scss/pages/_home.scss */
+.post-continue:visited {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+/* line 38, ../scss/pages/_home.scss */
+.post-continue:hover {
+  color: #1dcaff;
+}
+/* line 42, ../scss/pages/_home.scss */
+.post-continue:active {
+  text-decoration: underline;
+}
+
+/* line 1, ../scss/pages/_about.scss */
+.banner {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  display: block;
+  border: 1px solid #0084b4;
+}
+
+/* line 11, ../scss/pages/_about.scss */
+.intro p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 19, ../scss/pages/_about.scss */
+.possibilities p {
+  display: inline;
+  font-size: 24px;
+}
