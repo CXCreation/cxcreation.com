@@ -1,12 +1,38 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Norican);
+
+$cxcolor-darkblue: #214486;
+$cxcolor-blue: #0586f8;
+$cxcolor-lightblue: #a1d3ff;
+
+$cxcolor-darkgray: #5d5d5d;
+$cxcolor-gray: #cccccc;
+$cxcolor-lightgray: #f2f2f2;
+
+$cxcolor-black: #414141;
+
+$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$on-palm: 600px;
+$on-laptop: 800px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
 .container {
 	// @include container(800px);
   // @include susy-grid-background;
-	width: 1024px;
-	// @media (640) {
-	// 	width: 640px;
-	// }
-
+	max-width: 960px;
+	width: 80%;
   margin: 0 auto;
-	background: white;
 	// box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 15px -4px rgba(31, 73, 125, 0.8);
+	@include media-query($on-laptop) {
+		width: 80%;
+	}
+
+	@include media-query($on-palm) {
+		width: 100%;
+	}
 }

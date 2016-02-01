@@ -1,11 +1,17 @@
 .section-title {
   position: relative;
   font-size: 20px;
-  color: $cxcolor-gray;
-  text-align: center;
+  color: $cxcolor-black;
+  text-align: left;
+  font-weight: 500;
   display: block;
   // font-family: 'Norican', cursive;
-  margin: 0px auto 8px auto;
+  margin: 8px;
+}
+
+.section-header {
+  margin: 16px;
+  min-height: 100px;
 }
 
 .post {
@@ -13,11 +19,10 @@
 }
 
 .post-header {
-  padding-bottom: 20px;
+  @extend .section-header;
 }
 
 .post-title {
-  color: $cxcolor-darkblue;
   margin: auto auto -12px auto;
 }
 
@@ -36,10 +41,80 @@
   }
 
   &:hover {
-    color: $cxcolor-lightblue;
+    color: $cxcolor-gray;
   }
 
   &:active {
-    text-decoration: underline;
+    text-decoration: none;
   }
+}
+
+.app {
+
+}
+
+.app-header {
+  @extend .section-header;
+}
+
+.app-icon {
+  position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 18px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 1px #cfcfcf solid;
+
+  @include media-query($on-laptop) {
+    width: 100px;
+  	height: 100px;
+    border-radius: 18px;
+	}
+
+	@include media-query($on-palm) {
+    width: 60px;
+  	height: 60px;
+    border-radius: 14px;
+	}
+}
+
+.app-description {
+  position: relative;
+  margin-left: 124px;
+
+  h1 {
+    color: $cxcolor-black;
+    font-weight: 400;
+    margin-bottom: -12px;
+  }
+
+  p {
+    color: $cxcolor-darkgray;
+  }
+
+  @include media-query($on-laptop) {
+    margin-left: 124px;
+	}
+
+	@include media-query($on-palm) {
+    margin-left: 72px;
+	}
+}
+
+.course {
+
+}
+
+.course-header {
+  @extend .section-header;
+}
+
+.course-icon {
+  @extend .app-icon;
+}
+
+.course-description {
+  @extend .app-description;
 }

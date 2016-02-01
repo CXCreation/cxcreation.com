@@ -7,6 +7,15 @@
   {% include head.html %}
 
   <body>
+    <div class="site-nav">
+      <nav class="header-site-nav">
+        <div class="header-page-nav">
+          {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url %}{% assign current = 'current' %}{% endif %}
+            <a class="page-link hover-animation" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </nav>
+    </div>
 
     <div class="container">
       {% include header.html %}

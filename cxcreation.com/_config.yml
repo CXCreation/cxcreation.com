@@ -28,7 +28,7 @@ paginate: 5
 paginate_path: "/recent/page:num/"
 
 navigation:
- - title: Recent
+ - title: Blog
    url: /recent.html
  - title: Apps
    url: /apps.html

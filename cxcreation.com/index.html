@@ -7,12 +7,10 @@ layout: default
   </header>
 </section>
 
-<hr>
 <section id="latest">
-  <p class="section-title">Latest writing</p>
+  <p class="section-title">Recent writing</p>
   <article class="post">
-    <!-- <header class="post-header"> -->
-    <header>
+    <header class="post-header">
       <h1 class="post-title"><a href="{{ site.posts.first.url }}">{{ site.posts.first.title | camel_break }}</a></h1>
       <p {{ site.posts.first.excerpt | markdownify }}</p>
       <a href="{{ site.posts.first.url }}" class="post-continue">Continue Reading...</a>
@@ -20,7 +18,7 @@ layout: default
   </article>
 </section>
 
-<!-- <section id="recent">
+<section id="recent">
   {% for post in site.posts offset:1 | limit: 2 %}
   <article class="post">
     <header class="post-header">
@@ -30,25 +28,39 @@ layout: default
     </header>
   </article>
   {% endfor %}
-</section> -->
-<hr>
+</section>
 
+<hr>
 <section id="apps">
   <p class="section-title">Working on</p>
-  <header>
+  <header class="app-header">
+    <a href="https://itunes.apple.com/us/app/jink-messaging-meets-maps/id789646743" target="_blank" title="Jink">
+      <img class="app-icon" src="https://s3-ap-northeast-1.amazonaws.com/www.cxcreation.com/assets/images/Apps/Jink/icon.jpg" alt="Jink">
+    </a>
+    <div class="app-description">
+      <h1>Jink - Message & Meet & Map</h1>
+      <p>Jink makes getting together fun and easy by uniting mobile messaging and private, temporary location sharing. Whether you're out with a large group, on your way to meet someone for coffee, or planning a small gathering, use Jink to remove all the classic hurdles associated with meeting up so you can spend more time together.</p>
+    </div>
   </header>
 </section>
-<hr>
 
+<hr>
 <section id="course">
-  <p class="section-title">Course</p>
-  <header>
+  <p class="section-title">Recommended course</p>
+  <header class="course-header">
+    <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank" title="CS50x">
+      <img class="course-icon" src="https://s3-ap-northeast-1.amazonaws.com/www.cxcreation.com/assets/images/Course/cs50x.png" alt="CS50x">
+    </a>
+    <div class="course-description">
+      <h1>CS50 - Introduction to Computer Science</h1>
+      <p>Because I haven't taken any course with hundreds of students in states before, I'm having this course as the listening skills practice.</p>
+    </div>
   </header>
 </section>
-<hr>
 
+<!-- <hr>
 <section id="book">
   <p class="section-title">Reading</p>
   <header>
   </header>
-</section>
+</section> -->
